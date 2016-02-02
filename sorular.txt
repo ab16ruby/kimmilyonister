@@ -1,0 +1,27 @@
+﻿Ruby derlenebilen bir dildir.(Dogru/Yanlis)
+*
+Ruby coklu kalitima izin vermez.(Dogru/Yanlis)
+*
+Nobel ödülünü alan ilk türk kimdir?
+*
+Ruby soz dizimi olarak hangi dile benzer?
+*
+Ruby dosya uzantisi nedir?
+*
+Richard Stallman, Özgür Yazılım Hareketi'nin kurucusudur.(Dogru/Yanlis)
+*
+Ruby programlamada bir siniftan baska bir sinif turetilirken > kullanilir.(Dogru/Yanlis)
+*
+İlk defa dunya haritasi kim tarafindan cizilmistir?
+*
+Geçtiğimiz aylarda nobel ödülünü alan türk kimyacı kimdir?
+*
+Ruby dilinin temelleri kac yilinda atilmistir?
+*
+File.open('hello', 'w+')ile acilan dosya sadece okuma modundadır.(Dogru/Yanlis)
+*
+Mücadeleleri marşlara konu olan Eritre'nin başşehrinin ismi nedir?
+*
+
+
+
