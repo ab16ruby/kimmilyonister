@@ -37,7 +37,7 @@ loop do
     if cevap == cevaplar[index].strip
         
         print "Tebrikler Dogru cevap verdiniz"
-        puan += index*10
+        puan += (index+1)*10
         puts " "
         sorular.delete_at(index)
         cevaplar.delete_at(index)
@@ -46,14 +46,14 @@ loop do
         secim = gets.chomp.upcase
 
         if secim == "H"
-          puts "Puanınız {puan}"
+          puts "Puanınız ",puan
 	        break
         elsif secim == "E" 
 	         redo   
        	end
     else 
        puts "Yanlis cevap verdiniz"
-       puts "Puanınız {puan}" 
+       puts "Puanınız ",puan 
        break
     end    
 end
