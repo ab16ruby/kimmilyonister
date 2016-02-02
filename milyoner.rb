@@ -27,16 +27,16 @@ loop do
         sayi -= 1     
         puts "Çıkmak için (H/h) devam etmek için (E/e) basin"
         secim = gets.chomp.upcase
-
+      
         if secim == "H"
           puts "Puanınız ",puan
-	        break
+	        break	
         elsif secim == "E" 
 	         redo   
        	end
     else 
-       puts "Yanlis cevap verdiniz"
-       puts "Puanınız ",puan 
+       puts "Yanlis cevap verdiniz".red
+       puts "PUANINIZ ".blue ,puan 
        break
     end    
 end
