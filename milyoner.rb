@@ -24,18 +24,22 @@ loop do
         puts " "
         sorular.delete_at(index)
         cevaplar.delete_at(index)
-        sayi -= 1     
+            
         puts "Çıkmak için (H/h) devam etmek için (E/e) basin"
         secim = gets.chomp.upcase
-      
+        
         if secim == "H"
           puts "Puanınız ",puan
        	  break
         elsif secim == "E" 
 	         redo   
        	end
+       	 sayi -= 1
+       	if sayi==0
+       	 puts "tebrikler oyunda maksimum puanı kazandınız" 
+        end     
     else 
-       puts "Yanlis cevap verdiniz".red
+       puts "Yanlis cevap verdiniz,OYUN BİTTİ".red
        puts "PUANINIZ ".blue ,puan
        break
     end    
