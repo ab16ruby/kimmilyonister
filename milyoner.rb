@@ -30,13 +30,13 @@ loop do
       
         if secim == "H"
           puts "Puanınız ",puan
-	        break	
+       	  break
         elsif secim == "E" 
 	         redo   
        	end
     else 
        puts "Yanlis cevap verdiniz".red
-       puts "PUANINIZ ".blue ,puan 
+       puts "PUANINIZ ".blue ,puan
        break
     end    
 end
