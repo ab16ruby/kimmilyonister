@@ -14,8 +14,8 @@ class Milyoner
                     end
                 block_given? ? yield(cevaplar) : cevaplar.split('*')
        end 
-      
-       def randomSayı(sayi)
-               rastgele=rand(0..sayi)
+       
+       def randomSayı(sayi1)
+               rastgele=rand(0..sayi1)
        end 
 end

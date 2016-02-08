@@ -11,19 +11,22 @@ abc.window(width:"100",height:"25",padding:"15")
 abc.header(sym:"#")
 abc.header(title:"HOŞGELDİNİZ")
 
+
    secim = ""
    puan=0
    milyoner = Milyoner.new
    sorular =  milyoner.soruParse
    cevaplar = milyoner.cevapParse
-   sayi1 = 16
+   sayi=12
    
 loop do
     
   
-    index = milyoner.randomSayı(sayi1)
+    index = milyoner.randomSayı(sayi)
+    	
+    
     puts index.to_i 
-    puts sayi1
+    puts sayi 
     puts sorular [index]
       
     cevap =gets.chomp.upcase
@@ -31,11 +34,35 @@ loop do
     if cevap ==cevaplar[index].strip
         
         print "Tebrikler Dogru cevap verdiniz"
-        puan += (index+1)*10
-     
-        puts " "
-        sorular.delete_at(index)
-        cevaplar.delete_at(index)
+    if  index.to_i+1==1 
+           puan +=1*500
+    elsif index.to_i+1==2
+           puan +=1*1000
+    elsif index.to_i+1==3
+           puan +=1*2000
+    elsif  index.to_i+1==4
+           puan +=1*3000
+    elsif index.to_i+1==5
+           puan +=1*5000
+    elsif index.to_i+1==6
+           puan +=1*7500
+    elsif index.to_i+1==7
+           puan +=1*15000
+    elsif index.to_i+1==8
+           puan +=1*30000
+    elsif index.to_i+1==9
+           puan +=1*60000
+    elsif index.to_i+1==10
+           puan +=1*125000
+    elsif index.to_i+1==11
+           puan +=1*250000
+    else index.to_i+1==12
+           puan +=1*1000000
+    end 
+
+    puts " "
+    sorular.delete_at(index)
+    cevaplar.delete_at(index)
             
         puts "Çıkmak için (H/h) devam etmek için (E/e) basin"
         secim = gets.chomp.upcase
@@ -46,8 +73,12 @@ loop do
         
         elsif 
         	secim == "E" 
-        	sayi1 -= 1
+        	sayi -= 1
             system("clear")
+            if sayi==0
+            	puts "maksimum puanı kazandınız",puan
+            	break
+            end
 	       redo 
 	    else 
 	       break 
