@@ -31,33 +31,33 @@ loop do
       
     cevap =gets.chomp.upcase
      
-    if cevap ==cevaplar[index].strip
+    if cevap.strip ==cevaplar[index].strip
         
         print "Tebrikler Dogru cevap verdiniz"
     if  index.to_i+1==1 
-           puan +=1*500
+           puan +=500
     elsif index.to_i+1==2
-           puan +=1*1000
+           puan +=1000
     elsif index.to_i+1==3
-           puan +=1*2000
+           puan +=2000
     elsif  index.to_i+1==4
-           puan +=1*3000
+           puan +=3000
     elsif index.to_i+1==5
-           puan +=1*5000
+           puan +=5000
     elsif index.to_i+1==6
-           puan +=1*7500
+           puan +=7500
     elsif index.to_i+1==7
-           puan +=1*15000
+           puan +=15000
     elsif index.to_i+1==8
-           puan +=1*30000
+           puan +=30000
     elsif index.to_i+1==9
-           puan +=1*60000
+           puan +=60000
     elsif index.to_i+1==10
-           puan +=1*125000
+           puan +=125000
     elsif index.to_i+1==11
-           puan +=1*250000
+           puan +=250000
     else index.to_i+1==12
-           puan +=1*1000000
+           puan +=1000000
     end 
 
     puts " "
@@ -75,7 +75,7 @@ loop do
         	secim == "E" 
         	sayi -= 1
             system("clear")
-            if sayi==0
+            if sayi.zero?
             	puts "maksimum puanı kazandınız",puan
             	break
             end

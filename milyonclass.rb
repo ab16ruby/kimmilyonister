@@ -16,6 +16,6 @@ class Milyoner
        end 
        
        def randomSayı(sayi1)
-               rastgele=rand(0..sayi1)
+               rand(0..sayi1)
        end 
 end
